@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+  <display-name>ApplicationScopeEx</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  <context-param>
+    <param-name>db-ip</param-name>
+    <param-value>127.0.0.1</param-value>
+  </context-param>
+  <context-param>
+    <param-name>db-port</param-name>
+    <param-value>3306</param-value>
+  </context-param>
+  <servlet>
+    <description></description>
+    <display-name>ContextParamEx</display-name>
+    <servlet-name>ContextParamEx</servlet-name>
+    <servlet-class>com.applicationscope.servlet.ContextParamEx</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ContextParamEx</servlet-name>
+    <url-pattern>/ContextParamEx</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ApplicationScopeServlet1</display-name>
+    <servlet-name>ApplicationScopeServlet1</servlet-name>
+    <servlet-class>com.applicationscope.servlet.ApplicationScopeServlet1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ApplicationScopeServlet1</servlet-name>
+    <url-pattern>/ApplicationScopeServlet1</url-pattern>
+  </servlet-mapping>
+</web-app>
